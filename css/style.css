@@ -16,23 +16,105 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
+    
   
 }
 
+html,body,header,figure,button,img,p,h1,h2,ul,li{
+	padding: 0;
+	margin: 0;
+	border-style: none;
+}
+
 /*BODY*/
+figcaption{
+    display: none;
+}
 	body{
+        background-color: #00002E;
+        font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        
 
 	}
 
 /*TOPO*/
-	header.topo{
-		
+ .pg-home section header h2{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 35px;
+        font-size: 40px;
+        margin-top: 35px;
 	}
+    header.topo{
+        
+        align-items: center;
+        justify-content:center ;
+        display: flex;
+
+    }
+    header.topo img{
+        display: block;
+    }
 
 /*RODAPÉ*/
+footer{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 10px;
+
+}
+footer button{
+    padding: 10px 20px;
+    background-color: #00002E;
+    color: white;
+    border-color: white;
+    border: 3px solid;
+}
+
 	
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+    div.pg-home{
+		display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 	}
+
+    div.pg-home ul{
+        list-style: none;
+        align-items: center;
+        justify-content:space-between;
+        display: flex;
+        flex-direction: column;
+        width: 858px;
+        
+    }
+
+    div.pg-home ul li img {
+        width: 186px;
+        height: 186px;
+    }
+
+    div.pg-home ul li {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        }
+
+@media (min-width: 769px) {
+    header.topo{
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    div.pg-home ul{
+        flex-direction: row;
+    }
+}
